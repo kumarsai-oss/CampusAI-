@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-slate-950 text-slate-50;
+}
+
+.glass {
+  @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl;
+}
+
+.glass-sm {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-lg;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent;
+}
+
+.btn-primary {
+  @apply px-4 py-2 rounded-lg bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-medium hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 rounded-lg border border-primary-500 text-primary-400 font-medium hover:bg-primary-500/10 transition-all duration-300;
+}
